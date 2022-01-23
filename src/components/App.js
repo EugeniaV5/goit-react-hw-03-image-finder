@@ -91,11 +91,11 @@ class App extends Component {
       isEndOfArray,
     } = this.state;
     return (
-      <div className="app">
+      <div className="App">
         <Searchbar onSubmit={this.handleFormSubmit} />
         <ImageGallery images={images} onImageClick={this.openModal} />
         {isLoading && (
-          <div className="loader">
+          <div className="Loader">
             <Circles
               color="#f07416"
               arialLabel="loading-indicator"
